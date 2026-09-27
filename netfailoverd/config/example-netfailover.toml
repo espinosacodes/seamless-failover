@@ -1,7 +1,9 @@
 primary_service = "Wi-Fi"
 fallback_service = "iPhone USB"
+# Interface names can drift between boots and machines. Today this Mac shows
+# iPhone USB on en7. Always confirm with networksetup -listnetworkserviceorder.
 primary_interface = "en0"
-fallback_interface = "en8"
+fallback_interface = "en7"
 probe_url = "http://connectivitycheck.gstatic.com/generate_204"
 expected_content = ""
 probe_interval_secs = 5
