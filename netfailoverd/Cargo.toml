@@ -1,0 +1,21 @@
+[package]
+name = "netfailoverd"
+version = "0.1.0"
+edition = "2021"
+description = "Mac upstream failover daemon: probe primary, switch service order to iPhone path, revert on recovery"
+license = "MIT"
+
+[[bin]]
+name = "netfailoverd"
+path = "src/main.rs"
+
+[[bin]]
+name = "netfailoverctl"
+path = "src/bin/netfailoverctl.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+ureq = "2"

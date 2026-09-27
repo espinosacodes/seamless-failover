@@ -1,0 +1,5 @@
+/target
+netfailoverd/target
+.DS_Store
+/var
+*.log

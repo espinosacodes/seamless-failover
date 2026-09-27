@@ -1,0 +1,15 @@
+primary_service = "Wi-Fi"
+fallback_service = "iPhone USB"
+primary_interface = "en0"
+fallback_interface = "en8"
+probe_url = "http://connectivitycheck.gstatic.com/generate_204"
+expected_content = ""
+probe_interval_secs = 5
+probe_timeout_secs = 5
+fail_threshold = 3
+recover_threshold = 3
+cooldown_secs = 30
+dry_run = true
+log_path = "/var/log/netfailover.log"
+disable_lock_path = "/var/run/netfailover.disabled"
+state_path = "/var/run/netfailover.state"
